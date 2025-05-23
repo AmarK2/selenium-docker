@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+            label 'builder'
+        }
 
     environment {
         COMMIT_HASH = ''
